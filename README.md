@@ -1,5 +1,4 @@
 # my_ls
-Simple, partial implementation of the ls command, using only the following functions and system calls: malloc, free, printf, write, stat, lstat, opendir, closedir, readdir. 
 
 Simply run make to create the command my_ls. Then run ./my_ls with the desired arguments.
 
