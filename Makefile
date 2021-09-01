@@ -10,7 +10,14 @@ TARGET = my_ls
 $(TARGET) : $(OBJECTS)
 	$(CC) $(CFLAGS) -o $@ $^
 
-.PHONY: clean
+.PHONY: clean fclean re
 
 clean:
-	@rm -f $(TARGET) $(OBJECTS) core
+    @rm -f *.o
+
+fclean:
+    @rm $(TARGET)
+    $(clean)
+
+re: $(fclean)
+    $(MAKE)
